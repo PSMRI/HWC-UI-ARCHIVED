@@ -235,7 +235,7 @@ export const environment = {
   updateANCExaminationDetailsUrl: `${TM_API}ANC/update/examinationScreen`,
 
    /**ANC foetalMonitor API URLs */
-   savefetosenseTestDetailsUrl: `${TM_API}/foetalMonitor/sendMotherTestDetailsTofoetalMonitor`,
+   savefetosenseTestDetailsUrl: `${TM_API}/foetalMonitor/sendMotherTestDetailsToFoetalMonitor`,
    getPrescribedFetosenseTests: `${TM_API}/foetalMonitor/fetch/foetalMonitorDetails/`,
 
   /**
