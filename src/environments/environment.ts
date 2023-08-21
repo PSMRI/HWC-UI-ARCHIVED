@@ -64,7 +64,7 @@ const API104 = `${IP104}/104api-v1.0/`;
 // const TM_API = `http://localhost:8082/`;   
 const MMU_API = `${mmuIP}/mmuapi-v1.0/`;
 const COMMON_API_OPEN_SYNC = `http://${SERVER_IP}:8080/commonapi-v1.2/`;
-const SCHEDULER_API = `${schedulerIP}/schedulerapi-v1.0/`;
+const SCHEDULER_API = `${schedulerIP}/schedulerapi-v1.1/`;
 const mmuUICasesheet = "http://localhost:4200/";
 const ADMIN_API = `${adminIP}/adminapi-v1.0`;
 
@@ -536,9 +536,9 @@ export const environment = {
     getBirthImmunizationHistoryDataUrl: `${TM_API}/child-adolescent-care/getBenHistoryDetails`,
 
     /* SWAASA Urls*/ 
-    getResultStatusURL: `${COMMON_API}swaasa/startAssesment`,
-    getAssessmentUrl: `${COMMON_API}swaasa/getAssesment`,
-    getAssessmentIdUrl: `${COMMON_API}swaasa/getAssesmentDetails`,
+    getResultStatusURL: `${COMMON_API}lungAssessment/startAssesment`,
+    getAssessmentUrl: `${COMMON_API}lungAssessment/getAssesment`,
+    getAssessmentIdUrl: `${COMMON_API}swalungAssessmentasa/getAssesmentDetails`,
 
     /* CDSS Urls */
     getCdssQuestionsUrl: `${API104}CDSS/getQuestions`,
