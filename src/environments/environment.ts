@@ -538,7 +538,7 @@ export const environment = {
     /* SWAASA Urls*/ 
     getResultStatusURL: `${COMMON_API}lungAssessment/startAssesment`,
     getAssessmentUrl: `${COMMON_API}lungAssessment/getAssesment`,
-    getAssessmentIdUrl: `${COMMON_API}swalungAssessmentasa/getAssesmentDetails`,
+    getAssessmentIdUrl: `${COMMON_API}lungAssessment/getAssesmentDetails`,
 
     /* CDSS Urls */
     getCdssQuestionsUrl: `${API104}CDSS/getQuestions`,
