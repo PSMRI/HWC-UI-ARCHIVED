@@ -29,6 +29,8 @@ import { MdDialog, MdDialogRef } from '@angular/material';
 import { DataSyncLoginComponent } from '../app-modules/data-sync/data-sync-login/data-sync-login.component';
 import { MasterDownloadComponent } from '../app-modules/data-sync/master-download/master-download.component';
 import * as CryptoJS from 'crypto-js';
+import * as bcrypt from 'bcrypt';
+
 @Component({
   selector: 'app-login-cmp',
   templateUrl: './login.component.html',
@@ -129,7 +131,15 @@ export class LoginComponent implements OnInit {
 
 
   login() {
+    let plainPassword = this.password;
+    // Hash the plain password using bcrypt
+    const saltRounds = 10; // The number of salt rounds
 
+    bcrypt.hash(plainPassword, saltRounds, (err, hash) => {
+      if (err) {
+        console.error(err);
+        return;
+      }
 let encriptPassword = this.encrypt(this.Key_IV, this.password)
     
    this.authService.login(this.userName, encriptPassword, false)
@@ -189,7 +199,7 @@ let encriptPassword = this.encrypt(this.Key_IV, this.password)
       }
       , err => {
         this.confirmationService.alert(err, 'error');
-      });
+      });});
   }
 
   getServicesAuthdetails(loginDataResponse) {
