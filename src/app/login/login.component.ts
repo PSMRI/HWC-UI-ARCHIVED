@@ -177,23 +177,23 @@ export class LoginComponent implements OnInit {
               else {
                 this.confirmationService.alert(userLoggedIn.errorMessage, 'error');
               }  
-              })
+              });
             }
               else {
                 this.confirmationService.alert(logOutFromPreviousSession.errorMessage, 'error');
               }
-            })
+            });
             }
           });
-        }
+        }}
         else {
           sessionStorage.clear();
           this.router.navigate(["/login"]);
           this.confirmationService.alert(res.errorMessage, 'error');
-          }
-        }
-        else {
-          this.confirmationService.alert(res.errorMessage, 'error');
+          //}
+        //}
+        //else {
+         // this.confirmationService.alert(res.errorMessage, 'error');
         }
       }
       , err => {
