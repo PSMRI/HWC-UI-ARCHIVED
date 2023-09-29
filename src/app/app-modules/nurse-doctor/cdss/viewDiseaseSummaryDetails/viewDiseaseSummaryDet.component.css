@@ -1,4 +1,35 @@
-.list-unstyled {
+.title h4 {
+    display: inline-block;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.title .exit {
+    cursor: pointer;
+}
+.sub-header-style {
+    font-weight: bold;
+    font-size: 15px;
+}
+.sub-header-style span {
+    font-weight: normal;
+    white-space: pre-line;
+}
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+ /* ::ng-deep.cdk-overlay-container .cdk-global-overlay-wrapper .cdk-overlay-pane .mat-dialog-container {
+    padding: 20px !important;
+    height: 500px !important;
+    width: 1000px !important;
+    overflow-y: scroll !important;
+
+  } */
+  .list-unstyled {
     padding-left: 0;
     list-style: none;
   }
@@ -41,6 +72,11 @@
 
   .mat-dialog-title {
     margin: 20px;
+  }
+  .custom-dialog-content {
+    padding: 20px; /* Adjust the padding as needed */
+    max-height: 400px; /* Adjust the maximum height as needed */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds the maximum height */
   }
 
   .mat-icon {
