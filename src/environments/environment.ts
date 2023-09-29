@@ -68,11 +68,10 @@ const SCHEDULER_API = `${schedulerIP}/schedulerapi-v1.0/`;
 const mmuUICasesheet = "http://localhost:4200/";
 const ADMIN_API = `${adminIP}/adminapi-v1.0`;
 
-const IOT_API = 'http://localhost:8085/ezdx-hub-connect-srv';
+const IOT_API = `${ADMIN_API}/diagnostics/biologicalScreeningDevice`; 
 
  const FHIR_API = `${FHIRIP}/fhirapi-v1.0/`;
-//const FHIR_API = `http://localhost:8080/`;http://14.98.169.68:8080/
-// 
+
 export const environment = {
   production: false,
   app: `MMU`,

@@ -37,7 +37,6 @@ const adminIP = "http://10.208.122.38:8080";
 const FHIRIP = "http://10.208.122.38:8080";
 const identityIP = 'http://10.208.122.38:8080/';
 const IDENTITY_API = `${identityIP}/hwc-identity-0.0.1/`;
-const IOT_API = 'http://localhost:8085/ezdx-hub-connect-srv';
 const IP104 = 'http://10.208.122.38:8080/';
 // With API MAN Configuration
 // const COMMON_API_OPEN = `http://${IP}:8080/apiman-gateway/IEMR/Common/open/`;
@@ -55,7 +54,7 @@ const COMMON_API_OPEN_SYNC = `${SERVER_IP}commonapi-v1.0/`;
 const SCHEDULER_API = `${schedulerIP}schedulerapi-v1.0/`;
 const ADMIN_API = `${adminIP}/adminapi-v1.0`;
 const API104 = `${IP104}/104api-v1.0/`;
-
+const IOT_API = `${ADMIN_API}/diagnostics/biologicalScreeningDevice`; 
 const FHIR_API = `${FHIRIP}/fhirapi-v1.0/`;
 const mmuUICasesheet = `${tmUI_IP}tmui-v1.0`;
 
