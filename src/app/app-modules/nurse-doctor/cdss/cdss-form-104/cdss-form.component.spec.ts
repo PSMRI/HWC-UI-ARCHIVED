@@ -21,23 +21,21 @@
 */
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CdssFormComponent } from './cdss-form.component';
-import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
+import { Cdss104FormComponent } from './cdss-form.component';
 
-describe('CdssFormComponent', () => {
-  let component: CdssFormComponent;
-  let fixture: ComponentFixture<CdssFormComponent>;
+describe('Cdss104FormComponent', () => {
+  let component: Cdss104FormComponent;
+  let fixture: ComponentFixture<Cdss104FormComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      schemas: [CUSTOM_ELEMENTS_SCHEMA],
-      declarations: [ CdssFormComponent ]
+      declarations: [ Cdss104FormComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CdssFormComponent);
+    fixture = TestBed.createComponent(Cdss104FormComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
