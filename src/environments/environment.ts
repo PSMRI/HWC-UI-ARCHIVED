@@ -28,15 +28,15 @@
 
 
 
-const commonIP = 'http://10.208.122.38:8080';
-const identityIP = 'http://10.208.122.38:8080/';
-const tmIP = 'http://10.208.122.38:8080/';
-const IP104 = 'http://10.208.122.38:8080/';
+const commonIP = 'http://10.208.122.100:8080/';
+const identityIP = 'http://10.208.122.100:8080/';
+const tmIP = 'http://10.208.122.100:8080/';
+const IP104 = 'http://10.208.122.100:8080/';
 // const tmIP = 'http://localhost:8080/';
-const mmuIP = 'http://10.208.122.38:8080/';
-const schedulerIP = 'http://10.208.122.38:8080/';
-const adminIP = 'http://10.208.122.38:8080/';
-const FHIRIP ='http://10.208.122.38:8080/';
+const mmuIP = 'http://10.208.122.100:8080/';
+const schedulerIP = 'http://10.208.122.100:8080/';
+const adminIP = 'http://10.208.122.100:8080/';
+const FHIRIP ='http://10.208.122.100:8080/';
 
 // const SERVER_IP = '10.208.122.38';
 
@@ -57,7 +57,7 @@ const COMMON_API = `${commonIP}/commonapi-v1.0/`;
 const IDENTITY_API = `${identityIP}/identity-0.0.1/`;
 // const COMMON_API_OPEN = `http://localhost:8080/`;  
 // const COMMON_API = `http://localhost:8080/`;  
-const TM_API = `${tmIP}/hwc-facility-service/`;
+const TM_API = `${tmIP}/hwc-facility-service-v1.1/`;
 // const TM_API = `${tmIP}/hwc-facility-service/`;
 
 const API104 = `${IP104}/104api-v1.0/`;
@@ -68,11 +68,10 @@ const SCHEDULER_API = `${schedulerIP}/schedulerapi-v1.0/`;
 const mmuUICasesheet = "http://localhost:4200/";
 const ADMIN_API = `${adminIP}/adminapi-v1.0`;
 
-const IOT_API = 'http://localhost:8085/ezdx-hub-connect-srv';
+const biologicalScreeningDeviceAPI = `${ADMIN_API}/diagnostics/biologicalScreeningDevice`; 
 
  const FHIR_API = `${FHIRIP}/fhirapi-v1.0/`;
-//const FHIR_API = `http://localhost:8080/`;http://14.98.169.68:8080/
-// 
+
 export const environment = {
   production: false,
   app: `MMU`,
@@ -401,11 +400,11 @@ export const environment = {
   //file upload
   saveFile: `${COMMON_API}kmfilemanager/addFile`,
   viewFileData: `${TM_API}common/getKMFile`,
-  ioturl: `${IOT_API}`,
-  deviceStatusurl: `${IOT_API}/api/v1/bluetooth/hub/connection_status`,
-  deviceDisconnectUrl:`${IOT_API}/api/v1/bluetooth/hub/disconnect`,
-  deviceBluetoothurl: `${IOT_API}/api/v1/bluetooth/service_discovery`,
-  connectdeviceBluetoothurl: `${IOT_API}/api/v1/bluetooth/hub_connection`,
+  ioturl: `${biologicalScreeningDeviceAPI}`,
+  deviceStatusurl: `${biologicalScreeningDeviceAPI}/api/v1/bluetooth/hub/connection_status`,
+  deviceDisconnectUrl:`${biologicalScreeningDeviceAPI}/api/v1/bluetooth/hub/disconnect`,
+  deviceBluetoothurl: `${biologicalScreeningDeviceAPI}/api/v1/bluetooth/service_discovery`,
+  connectdeviceBluetoothurl: `${biologicalScreeningDeviceAPI}/api/v1/bluetooth/hub_connection`,
 
   startWeighturl: "/api/v1/physical_tests/weight",
   startTempurl: "/api/v1/physical_tests/temperature",
@@ -549,5 +548,7 @@ export const environment = {
     getActionMasterUrl: `${TM_API}uptsu/get/action-master`,
     closeVisitSaveComplaintsUrl: `${TM_API}uptsu/submit/closevisit`,
     getnurse104referredworklisturls: `${TM_API}uptsu/getWorklistByVanID`,
+    getDiseaseDataUrls: `${API104}diseaseController/getDiseasesByID`,
+    getDiseaseNamesUrls: `${API104}diseaseController/getAvailableDiseases`,
 
 };
