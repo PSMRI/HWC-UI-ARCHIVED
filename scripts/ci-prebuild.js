@@ -47,6 +47,7 @@ const defaultEnvValues = {
   SCHEDULER_API_BASE: '',
   ADMIN_API_BASE: '',
   FHIR_API_BASE: '',
+  EZDX_HUB_BASE: '',
   SERVER_IP: '',
   SWYMED_IP: '',
   SCHEDULER_UI_BASE: '',

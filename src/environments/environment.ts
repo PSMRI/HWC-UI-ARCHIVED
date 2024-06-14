@@ -34,6 +34,7 @@ const mmuIP = 'http://10.208.122.100:8080/';
 const schedulerIP = 'http://10.208.122.100:8080/';
 const adminIP = 'http://10.208.122.100:8080/';
 const FHIRIP ='http://10.208.122.100:8080/';
+const IOT_API = 'http://localhost:8085/ezdx-hub-connect-srv'
 const SERVER_IP = "10.208.122.39";
 const SWYMED_IP = "14.143.13.109";
 
@@ -62,7 +63,6 @@ const mmuUICasesheet = "http://localhost:4200/";
 const ADMIN_API = `${adminIP}/adminapi-v1.0`;
 var inventoryUI_IP = 'https://amritwprdev.piramalswasthya.org/';
 
-const biologicalScreeningDeviceAPI = `${ADMIN_API}/diagnostics/biologicalScreeningDevice`;
 
 const FHIR_API = `${FHIRIP}/fhirapi-v1.0/`;
 
@@ -393,11 +393,11 @@ export const environment = {
   //file upload
   saveFile: `${COMMON_API}kmfilemanager/addFile`,
   viewFileData: `${TM_API}common/getKMFile`,
-  ioturl: `${biologicalScreeningDeviceAPI}`,
-  deviceStatusurl: `${biologicalScreeningDeviceAPI}/api/v1/bluetooth/hub/connection_status`,
-  deviceDisconnectUrl:`${biologicalScreeningDeviceAPI}/api/v1/bluetooth/hub/disconnect`,
-  deviceBluetoothurl: `${biologicalScreeningDeviceAPI}/api/v1/bluetooth/service_discovery`,
-  connectdeviceBluetoothurl: `${biologicalScreeningDeviceAPI}/api/v1/bluetooth/hub_connection`,
+  ioturl: `${IOT_API}`,
+  deviceStatusurl: `${IOT_API}/api/v1/bluetooth/hub/connection_status`,
+  deviceDisconnectUrl:`${IOT_API}/api/v1/bluetooth/hub/disconnect`,
+  deviceBluetoothurl: `${IOT_API}/api/v1/bluetooth/service_discovery`,
+  connectdeviceBluetoothurl: `${IOT_API}/api/v1/bluetooth/hub_connection`,
 
   startWeighturl: "/api/v1/physical_tests/weight",
   startTempurl: "/api/v1/physical_tests/temperature",
