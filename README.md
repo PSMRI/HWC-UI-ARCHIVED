@@ -1,3 +1,7 @@
+# ❗❗❗ NOTICE ❗❗❗
+
+A new version of the repository is available here [PSMRI/HWC-UI](https://github.com/PSMRI/HWC-UI)
+
 # AMRIT - Health and Wellness Centre (HWC) 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)  ![branch parameter](https://github.com/PSMRI/HWC-UI/actions/workflows/sast-and-package.yml/badge.svg)
 
